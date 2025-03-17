@@ -6,8 +6,14 @@ public class HariTest {
 	@Test(groups = "smoke")
 	public void harryTest() {
 		System.out.println("harivardan successfully tested");
-		String name = System.getProperty("name");
-		System.out.println("name from the cmd line is "+name);
+		String url=System.getProperty("url");
+		String username = System.getProperty("username");
+		String password = System.getProperty("password");
+		String browser = System.getProperty("browser");
+		System.out.println("the url is "+url);
+		System.out.println("the username is "+username);
+		System.out.println("the password is "+password);
+		System.out.println("the browser is "+browser);
 	}
 	@Test(groups = "regression")
 	public void potterTest() {
